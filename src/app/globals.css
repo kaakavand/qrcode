@@ -2,20 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+.qrcode-container {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.qrcode-space {
+  align-items: center;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.qrcode-segmented .ant-segmented-item {
+  background: #333;
+  color: #fff;
+}
+
+.qrcode-input {
+  background: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.qrcode-input input {
+  color: #fff;
+}
+
+.qrcode-upload .ant-btn {
+  background-color: #444;
+  color: #fff;
+  border-color: #555;
+}
+
+.qrcode-upload .ant-btn:hover {
+  background-color: #555;
+  border-color: #666;
+}
+
+.qrcode-upload .ant-btn .anticon {
+  color: #fff;
+}
+
+.ant-btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.ant-btn-primary:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
 }
